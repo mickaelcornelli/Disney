@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "Avenir-Roman";
+  src: url(./fonts/Avenir-Roman.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #040714;
+  color: #f9f9f9;
+  font-family: "Avenir-Roman", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.gray {
+  color: #999;
+  line-height: 1.5;
+}
+
+a{
+  color: #f9f9f9;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.priceTitle {
+  font-size: 26px;
+  color: #fff;
+  margin: 0;
+}
+
+h4{
+  font-size: 20px;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+/* Tablette & PC */
+@media only screen and (min-width: 768px){
+  body{
+    font-size: 16px;
+  }
+}
+/* Mobile device */
+@media only screen and (min-width: 480px) and (max-width: 768px){
+  body{
+    font-size: 15px;
+  }
+}
+/* Small device */
+@media only screen and (max-width: 479px){
+  body{
+    font-size: 14px;
+  }
+}
